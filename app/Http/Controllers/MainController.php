@@ -61,4 +61,9 @@ class MainController extends Controller
         return redirect(url()->previous() . '#contact-us')
             ->with('success', true);
     }
+
+    public function privacy()
+    {        
+        return view('privacy');
+    }
 }
